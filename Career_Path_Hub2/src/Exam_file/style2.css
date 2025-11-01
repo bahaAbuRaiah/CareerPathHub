@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Ensures font consistency */
+    /* background-color: linear-gradient(#6a11cb, #2575fc); Aesthetic gradient background */
+    /*color: white;  Light text for readability on dark background */
+}
+
+.bg-gray-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(236, 236, 236);
+}
+header {
+    background-color: #969ba1;
+    /* color: white; */
+    padding: 10px;
+    text-align: center;
+}
+
+.question p {
+    margin: 15px 0 5px;
+}
+
+.question label {
+    display: block;
+    margin-left: 20px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1a6d9e;
+}
+body {
+    font-family: Arial, sans-serif;
+    background:#05386B;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#resultsContainer {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#resultsChart {
+    max-width: 400px; /* Limits the width to 400px */
+    max-height: 400px; /* Limits the height to 400px */
+    margin: auto; /* Centers the chart horizontally */
+}
+/* Custom styles if you need more control outside of Tailwind */
+.questionnaire label:hover {
+    background-color: rgba(237, 242, 247, 1); /* Light grey background on hover */
+}
+
+.questionnaire input[type="radio"]:checked + span {
+    font-weight: bold; /* Makes selected option bolder */
+}footer {
+    flex-shrink: 0; 
+    width: 100%;  
+    text-align: center;
+    background: #05386B;
+    color: white;
+    padding: 10px 0;
+    position: relative; 
+    bottom: 0;  
+}

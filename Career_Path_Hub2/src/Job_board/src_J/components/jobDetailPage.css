@@ -1,0 +1,209 @@
+/* CSS Styling for Job Detail Page */
+
+.application_page {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 15px;
+  font-family: 'Roboto', sans-serif;
+  background:rgb(255, 255, 255) ;
+}
+
+.application_page form {
+  flex: 1;
+  background:#C9E6F0;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.application_page form h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.application_page form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.application_page form div label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+.application_page form div input,
+.application_page form div textarea {
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.application_page form div input:focus,
+.application_page form div textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.application_page form div textarea {
+  resize: vertical;
+}
+
+.application_page form button {
+  background: #007bff;
+  color: #ffffff;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.application_page form button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.application_page form button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.application_page .job-details {
+  flex: 1;
+  padding: 30px;
+  background: #E1F7F5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.application_page .job-details header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.application_page .job-details h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.application_page .job-details header a,
+.application_page .job-details header p {
+  font-size: 14px;
+  color: #777;
+}
+
+hr {
+  margin: 15px 0;
+  border: none;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.application_page .job-details section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.application_page .job-details section .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.application_page .job-details section .wrapper:first-child div {
+  display: flex;
+  gap: 10px;
+}
+
+.application_page .job-details section .wrapper:first-child div div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.application_page .job-details section .wrapper:first-child div div span {
+  font-size: 14px;
+  color: #555;
+}
+
+.application_page .job-details section .wrapper .location-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.application_page .job-details section .wrapper .location-wrapper span {
+  color: #555;
+  font-size: 14px;
+}
+
+.application_page .job-details section .wrapper:last-child h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.application_page .job-details section .wrapper:last-child ul li {
+  font-size: 14px;
+  color: #555;
+}
+
+.application_page .job-details footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+.application_page .job-details footer p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .application_page {
+    flex-direction: column-reverse;
+    gap: 15px;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .application_page form {
+    padding: 20px;
+  }
+
+  .application_page .job-details {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .application_page {
+    gap: 10px;
+  }
+
+  .application_page form button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,203 @@
+/* استيراد الخط */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* إعادة تعيين التنسيقات الافتراضية */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* تنسيقات الجسم العام */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5; /* خلفية رمادية خفيفة */
+  color: #333;
+  width: 100%; /* تأكيد عرض الصفحة */
+  height: 100%; /* تأكيد ارتفاع الصفحة */
+}
+
+/* تنسيقات صفحة التسجيل */
+.authPage {
+  display: flex;
+  justify-content:flex-end ; /* توسيط أفقي */
+  align-items: center; /* توسيط عمودي */
+  min-height: 100vh; /* تغطية الشاشة بالكامل */
+  padding: 20px; /* مسافة داخلية */
+}
+
+/* تنسيقات الحاوية الرئيسية */
+.container {
+  background-color: #fff; /* خلفية بيضاء */
+  padding: 40px;
+  border-radius: 15px; /* زوايا دائرية أكثر */
+  width: 100%;
+  max-width: 900px; /* تقليل العرض الأقصى */
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); /* ظل أكثر وضوحًا */
+  margin-left: 400px;
+  margin-right: 400px; /* ضمان التوسيط */
+  animation: fadeIn 0.5s ease-in-out; /* إضافة حركة بسيطة */
+}
+
+/* حركة التلاشي */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* تنسيقات العنوان */
+.header h3 {
+  font-size: 2.2rem; /* زيادة حجم العنوان */
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #007bff;
+  text-transform: capitalize; /* تحويل النص إلى شكل جمالي */
+}
+
+/* تنسيقات النموذج */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* تباعد متساوٍ بين الحقول */
+}
+
+/* تغليف الحقول */
+.wrapper {
+  display: flex;
+  gap: 20px; /* تباعد أفقي بين الحقول */
+}
+
+/* تنسيقات حقل الإدخال */
+.inputTag {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputTag label {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #555;
+  font-size: 0.95rem; /* تحسين وضوح النص */
+}
+
+.inputTag div {
+  position: relative;
+}
+
+.inputTag input,
+.inputTag select,
+.inputTag textarea {
+  width: 100%;
+  padding: 12px 50px 12px 15px; /* تباعد داخلي مناسب */
+  border: 1px solid #ddd;
+  border-radius: 8px; /* زوايا أكثر دائرية */
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: all 0.3s ease; /* حركة انتقالية عند التركيز */
+}
+
+.inputTag input::placeholder,
+.inputTag select::placeholder,
+.inputTag textarea::placeholder {
+  color: #999;
+}
+
+.inputTag input:focus,
+.inputTag select:focus,
+.inputTag textarea:focus {
+  outline: none;
+  border-color: #007bff; /* تغيير لون الحواف عند التركيز */
+  background-color: #fff; /* تغيير اللون لجعلها أكثر وضوحًا */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* تأثير الإضاءة */
+}
+
+.inputTag div svg {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #999; /* لون الأيقونات */
+  transition: color 0.3s;
+}
+
+.inputTag input:focus + svg,
+.inputTag select:focus + svg,
+.inputTag textarea:focus + svg {
+  color: #007bff; /* تغيير لون الأيقونات عند التركيز */
+}
+
+/* تنسيقات الزر */
+button {
+  padding: 14px;
+  width: 100%;
+  background-color: #007bff; /* لون أزرق */
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* زوايا دائرية */
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* لون أزرق غامق عند التمرير */
+  transform: translateY(-2px); /* حركة بسيطة */
+  box-shadow: 0 4px 10px rgba(0, 91, 187, 0.3); /* تأثير الظل */
+}
+
+/* تنسيقات الرابط */
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* تغيير اللون عند التمرير */
+}
+
+/* استجابة الشاشة */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 90%; /* عرض مرن للشاشات المتوسطة */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px; /* تقليل التباعد الداخلي */
+  }
+
+  .wrapper {
+    flex-direction: column; /* ترتيب الحقول عموديًا */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .header h3 {
+    font-size: 1.8rem; /* تقليل حجم العنوان */
+  }
+
+  button {
+    font-size: 1rem; /* تقليل حجم الزر */
+  }
+}

@@ -1,0 +1,238 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0A1D56;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #3D7FC4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #3D7FC4;
+            position: relative;
+            width: 100%;
+        }
+        .home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 3px;
+            background-color: #071432;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            position: absolute;
+            right: 50px;
+            top: 10px;
+        }
+        .home-button:hover {
+            background-color: #38D0EF;
+            transform: translateY(-2px);
+            color: black;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #3D7FC4;
+        }
+        
+            
+        .logo {
+            position: absolute;
+            left: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            max-height: 100px; /* Increased size */
+            width: auto; /* Maintain aspect ratio */
+            
+        }
+    
+        
+    
+    
+        .footer {
+            background: linear-gradient(to right, #0062E6, #33AEFF); /* Modern gradient background */
+            color: #ffffff;
+            padding: 30px 20px; /* Increased vertical padding */
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Shadow on the upper edge */
+        }
+    
+        .footer-row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-right: 30px;
+        }
+    
+        .footer-col {
+            flex: 1;
+            min-width: 150px; /* Minimum width to maintain structure */
+            max-width: 260px; /* Maximum width for each column */
+            padding: 15px;
+            box-sizing: border-box; /* Ensures padding is included in the width */
+            text-align: left; /* Aligns text to the left within each column */
+        }
+    
+        .footer-col h4 {
+            margin-top: 0;
+            color: #fff;
+        }
+    
+        .footer-col p, .footer-col ul, .footer-col form {
+            font-size: 14px; /* Smaller font size for footer text */
+            text-align: left;
+            margin-right: 28px;
+        }
+    
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        .footer-col ul .links li {
+            padding: 5px 0; /* Adds vertical padding for each link */
+        }
+    
+        .footer-col ul .links li a {
+            color: #ffffff;
+            text-decoration: none; /* Removes underline from links */
+            transition: color 0.3s ease; /* Smooth transition for hover effects */
+        }
+    
+        .footer-col ul .links li a:hover {
+            color: #d1eaff; /* Lighter color on hover */
+        }
+    
+        .footer-col form {
+            display: flex;
+            margin-top: 10px;
+        }
+    
+        .footer-col form input[type="email"] {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 5px; /* Space between the input and the button */
+        }
+    
+        .footer-col form button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #224abe; /* Darker blue background */
+            color: white;
+            cursor: pointer;
+        }
+    
+        .footer-col form button:hover {
+            background-color: #193795; /* Even darker blue on hover */
+        }
+    
+        .icons i {
+            font-size: 20px; /* Larger font size for icons */
+            margin-right: 10px; /* Space between icons */
+            color: #ffffff; /* Icon color */
+        }
+    
+        /* Ensure the footer sticks to the bottom */
+        footer {
+            margin-top:100px;
+        }
+        
+
+        .charts-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            gap: 20px;
+            width: 100%;
+        }
+    
+        .row {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 960px; /* Adjust as needed to fit your content */
+            gap: 10px;
+        }
+    
+        .half-width {
+            flex: 1 1 50%; /* Each box attempts to take up exactly half the row */
+            max-width: 450px; /* Ensures no single box is wider than 450px */
+            height: 300px; /* Sets a fixed height for consistency */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            box-sizing: border-box; /* Ensures padding is included in the width/height */
+        }
+        
+        .text-title {    
+            font-size: 20px;
+            color: #0056b3; /* Use a theme color for the title */
+            font-weight: bold; /* Makes the title bolder */
+            margin-bottom: 60px;
+            text-align: center;
+        }
+    
+        p {
+            font-size: 16px; /* Slightly larger font size for better readability */
+            line-height: 1.6; /* Increased line height for better readability */
+            color: #333; /* Dark grey color for better contrast */
+            max-width: 90%; /* Limiting width to improve readability */
+            margin: auto; /* Centers the paragraph within its container */
+            text-align: center; /* Center-align the text for better focus */
+        }
+    
+        p strong {
+            color: #d35400; /* A vibrant color for highlighting the specialization */
+            font-size: 18px; /* Slightly larger font size for emphasis */
+        }
+        .chart-title{
+            color: #333;
+            font-size: 18px;
+            margin-bottom:5px ;
+            margin-top: 5px;
+        }
+    
+        .legend {
+            display: flex;
+            justify-content: space-around;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    
+        .legend div {
+            display: flex;
+            align-items: center;
+        }
+    
+        .color-box {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+        }
+    
+        canvas {
+            width: 100%; /* Adjust canvas width to fit within the container */
+            max-height: 100%; /* Limit canvas height to fit within the container */
+        }
