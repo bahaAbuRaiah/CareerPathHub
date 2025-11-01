@@ -14,15 +14,15 @@ It provides two key services:
 ---
 
 ## 🎯 Objectives
-- Offer a data-driven IT aptitude test that provides personalized recommendations.  
-- Build a centralized portal for job and training opportunities in the IT field.  
-- Support students and graduates with an intuitive, responsive, and secure platform.
+- Provide a reliable IT aptitude test with personalized recommendations.  
+- Offer a centralized job and training portal for IT graduates.  
+- Support users through a simple, secure, and responsive interface.
 
 ---
 
 ## ⚙️ System Overview
 Three main user roles:
-- **Admin:** Approves jobs/training posts and manages users.  
+- **Admin:** Manages users and approves job/training posts.  
 - **Student:** Takes aptitude tests, views results, and applies for opportunities.  
 - **Company:** Posts jobs/training and reviews applications.
 
@@ -39,29 +39,29 @@ Three main user roles:
 ---
 
 ## 🧩 Core Features
-- Online IT aptitude test with result visualization.  
+- IT aptitude test and result visualization.  
 - Job & training search and application system.  
-- Role-based login and secure authentication.  
-- Admin dashboard for content management.  
-- Fully responsive design across all devices.
+- Role-based authentication (Admin / Student / Company).  
+- Admin dashboard for content moderation.  
+- Responsive UI for all device sizes.
 
 ---
 
 ## 🧪 Testing
-- **Black-box testing** for input/output validation.  
-- **Postman testing** for backend API reliability and performance.  
+- **Black-box testing** for validating functionality.  
+- **Postman testing** for backend API verification.  
 
 ---
 
 ## 🔮 Future Work
 - Backend migration to **Node.js + PostgreSQL**.  
-- Integration of **AI-based recommendations**.  
-- Addition of **real-time notifications** and messaging.
+- Integration of **AI-based recommendation system**.  
+- Addition of **real-time notifications** and messaging features.
 
 ---
 
 ## 👤 Author
 **Baha Ibrahim Abu Raiah**  
-AI & Data Science Track – The Hashemite University  
-Supervised by **Dr. Ahmad Qawasmeh**  
-June 2024
+The Hashemite University – 2024  
+
+📘 **Graduation Project – B.Sc. in Computer Science**
